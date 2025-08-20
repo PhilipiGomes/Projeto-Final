@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pro Landing — Video Hero</title>
+  <meta name="description" content="Professional landing page with background video and quick actions to Quiz and Timeline sections." />
+
+  <style>
+    /* Same styles as before */
+    :root {
+      --bg-dark: #0b0f14;
+      --fg: #e7eef7;
+      --fg-dim: #c6d1df;
+      --accent: #6ee7f5;
+      --accent-2: #a78bfa;
+      --btn-bg: rgba(255,255,255,0.1);
+      --btn-bg-hover: rgba(255,255,255,0.18);
+      --ring: rgba(110,231,245,0.55);
+      --shadow-lg: 0 20px 40px rgba(0,0,0,0.45);
+      --radius-xl: 20px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family: system-ui,sans-serif; color:var(--fg); background:var(--bg-dark); }
+    .hero { position:relative; min-height:100vh; display:grid; place-items:center; overflow:hidden; isolation:isolate; }
+    .hero video.bg-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-2; filter:saturate(1.1) contrast(1.05) brightness(0.9); }
+    .hero::before { content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(180deg,rgba(3,8,20,0.35),rgba(3,8,20,0.75)); }
+    .brand { position:absolute; top:24px; left:24px; display:inline-flex; align-items:center; gap:10px; padding:10px 14px; background:rgba(255,255,255,0.08); backdrop-filter:blur(8px); border-radius:999px; color:var(--fg); font-weight:600; text-decoration:none; }
+    .brand .dot { width:10px; height:10px; border-radius:50%; background:linear-gradient(135deg,var(--accent),var(--accent-2)); }
+    .hero-inner { text-align:center; max-width:1000px; padding:0 20px; }
+    .headline { font-size:clamp(2rem,5vw,4rem); margin:0 0 12px; text-shadow:0 4px 24px rgba(0,0,0,0.55); }
+    .subhead { font-size:clamp(1rem,2vw,1.25rem); color:var(--fg-dim); margin:0 auto; max-width:800px; }
+    .cta-dock { position:absolute; left:50%; bottom:24px; transform:translateX(-50%); display:flex; gap:12px; padding:12px; background:rgba(10,13,18,0.55); backdrop-filter:blur(10px); border-radius:var(--radius-xl); }
+    .btn { padding:14px 18px; border-radius:999px; background:var(--btn-bg); color:var(--fg); font-weight:700; text-decoration:none; transition:background .2s, transform .2s; }
+    .btn:hover { background:var(--btn-bg-hover); transform:translateY(-1px); }
+    .btn .kbd { font:600 11px/1 monospace; padding:6px 8px; border-radius:9px; background:rgba(255,255,255,0.12); }
+    section { padding:72px 24px; }
+    .section-inner { max-width:1100px; margin:0 auto; }
+    .section-title { font-size:clamp(1.5rem,3vw,2.25rem); margin:0 0 12px; }
+    .section-desc { color:var(--fg-dim); margin:0 0 32px; }
+    .card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
+    .card { background:rgba(255,255,255,0.05); border-radius:16px; padding:18px; box-shadow:var(--shadow-lg); }
+    .footer { padding:32px 24px 56px; border-top:1px solid rgba(255,255,255,0.08); color:var(--fg-dim); text-align:center; }
+  </style>
+</head>
+
+<body>
+  <a class="brand" href="#top" aria-label="Go to top">
+    <span class="dot" aria-hidden="true"></span>
+    Pro Landing
+  </a>
+
+  <!-- ===== HERO ===== -->
+<header id="top" class="hero" role="banner">
+  <video class="bg-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+    <source src="videos/getty.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+    <div class="hero-inner">
+      <h1 class="headline">Build what matters.</h1>
+      <p class="subhead">A crisp, modern hero with a cinematic background video. Use the quick actions below to jump straight into the quiz or explore the project timeline.</p>
+    </div>
+a
+    <nav class="cta-dock" aria-label="Primary quick actions">
+      <a class="btn" href="#quiz"><span class="kbd">Q</span> Go to Quiz</a>
+      <a class="btn" href="#timeline"><span class="kbd">T</span> Go to Timeline</a>
+    </nav>
+  </header>
+
+  <!-- ===== TIMELINE SECTION ===== -->
+  <section id="timeline" aria-labelledby="timeline-title">
+    <div class="section-inner">
+      <h2 id="timeline-title" class="section-title">Timeline</h2>
+      <p class="section-desc">An interactive external timeline embedded below:</p>
+      <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vQXcrGD6WJq72ghCr7Cn1kn3fExEF-wln8eEWX-jWFIUFOyEgHufVlvBQelacsufUAUjFe-sTxfy3rp&font=Default&lang=en&initial_zoom=2&width=100%25&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    </div>
+  </section>
+
+  <!-- ===== QUIZ SECTION ===== -->
+  <section id="quiz" aria-labelledby="quiz-title">
+    <div class="section-inner">
+      <h2 id="quiz-title" class="section-title">Quiz</h2>
+      <p class="section-desc">This is a placeholder quiz block. Replace with your own form or quiz component.</p>
+      <div class="card-grid">
+        <article class="card"><h3>Question 1</h3><p>Short description or prompt for the first question.</p></article>
+        <article class="card"><h3>Question 2</h3><p>Short description or prompt for the second question.</p></article>
+        <article class="card"><h3>Question 3</h3><p>Short description or prompt for the third question.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> Pro Landing. All rights reserved.</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    window.addEventListener('keydown', (e) => {
+      if (e.key.toLowerCase() === 'q') location.hash = '#quiz';
+      else if (e.key.toLowerCase() === 't') location.hash = '#timeline';
+    });
+  </script>
+</body>
+</html>
