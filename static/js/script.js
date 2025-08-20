@@ -1,29 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Respostas corretas do quiz
   const answers = {
     q1: '1939 a 1945',
-    q2: 'Lorem ipsum A',
-    q3: 'Lorem ipsum B',
-    q4: 'Lorem ipsum C',
-    q5: 'Lorem ipsum D',
-    q6: 'Lorem ipsum A',
-    q7: 'Lorem ipsum B',
-    q8: 'Lorem ipsum C',
-    q9: 'Lorem ipsum D',
-    q10: 'Lorem ipsum A',
-    q11: 'Lorem ipsum B',
-    q12: 'Lorem ipsum C',
-    q13: 'Lorem ipsum D',
-    q14: 'Lorem ipsum A',
-    q15: 'Lorem ipsum B',
-    q16: 'Lorem ipsum C',
-    q17: 'Lorem ipsum D',
-    q18: 'Lorem ipsum A',
-    q19: 'Lorem ipsum B',
-    q20: 'Lorem ipsum C'
+    q2: 'Itália, Japão e Alemanha',
+    q3: 'França, Reino Unido, EUA e URSS',
+    q4: 'Invasão alemã da Polônia',
+    q5: 'Operação Barbarossa',
+    q6: '7 de dezembro de 1941',
+    q7: 'Operação Overlord',
+    q8: 'Adolf Hitler',
+    q9: 'Batalha de Stalingrado',
+    q10: 'Solução Final',
+    q11: 'Hiroshima',
+    q12: 'Todas as anteriores',
+    q13: 'Dwight D. Eisenhower',
+    q14: 'Conferência de Potsdam',
+    q15: 'Polônia',
+    q16: 'Batalha da Grã-Bretanha',
+    q17: 'Batalha do Bulge',
+    q18: 'Iwo Jima',
+    q19: 'Projeto Manhattan',
+    q20: '8 de maio de 1945'
   };
 
-  const btnTop = document.querySelector('.btn-top') || document.querySelector('.bt');
-  const quizSection = document.querySelector('.qz') || document.querySelector('.quiz-section');
+  const btnTop = document.querySelector('.btn-top');
+  const quizSection = document.querySelector('.qz');
   const quizForm = document.getElementById('qf');
 
   // Timer state
@@ -40,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function cleanSymbolText(text) {
-    return text.replace(/[✔✖]\uFE0F?\s*$/g, '').trim();
+    return text.replace(/[✔✖]️?\s*$/g, '').trim();
   }
 
   function getElapsedMs() {
@@ -79,17 +80,17 @@ document.addEventListener('DOMContentLoaded', () => {
     startTimer(timerEl);
   }
 
-  // ---------------- Btn-top (mostrar após um scroll menor) ----------------
-  const scrollThreshold = 150; // novo valor solicitado
+  // Back to top button
+  const scrollThreshold = 150;
   if (btnTop) {
     btnTop.style.display = 'none';
     window.addEventListener('scroll', () => {
-      btnTop.style.display = window.scrollY > scrollThreshold ? 'block' : 'none';
+      btnTop.style.display = window.scrollY > scrollThreshold ? 'flex' : 'none';
     });
     btnTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
 
-  // ---------------- Quiz: start, randomizar e timer flutuante ----------------
+  // Quiz setup
   if (quizSection && quizForm) {
     quizSection.style.display = 'none';
 
@@ -99,31 +100,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const startBtn = document.createElement('button');
     startBtn.type = 'button';
     startBtn.id = 'startBtn';
-    startBtn.textContent = 'Começar Quiz';
+    startBtn.innerHTML = '🚀 Começar Quiz';
     startBtn.className = 'start-btn';
 
-    // timer flutuante criado aqui — ficará fixo na tela quando visível
+    // Timer flutuante
     const timerEl = document.createElement('div');
     timerEl.id = 'quiz-timer';
-    timerEl.textContent = '00:00';
-    // estilo inline para garantir posição fixa sem alterar CSS externo
+    timerEl.innerHTML = '⏱️ 00:00';
     Object.assign(timerEl.style, {
       display: 'none',
       position: 'fixed',
       right: '20px',
       bottom: '90px',
-      padding: '6px 10px',
-      background: '#ffffff',
-      border: '1px solid #ddd',
-      borderRadius: '6px',
-      boxShadow: '0 6px 18px rgba(0,0,0,0.08)',
-      fontFamily: 'monospace',
-      zIndex: 1100,
-      fontWeight: '600'
+      padding: '12px 16px',
+      background: 'linear-gradient(135deg, #2c3e50, #34495e)',
+      border: '2px solid #d4af37',
+      borderRadius: '8px',
+      boxShadow: '0 8px 25px rgba(0,0,0,0.5)',
+      fontFamily: 'Orbitron, monospace',
+      color: '#d4af37',
+      fontWeight: '700',
+      fontSize: '1.1rem',
+      zIndex: '1100'
     });
 
     startWrapper.appendChild(startBtn);
-    // insert timer in DOM so it floats independently
     document.body.appendChild(timerEl);
     quizSection.parentNode.insertBefore(startWrapper, quizSection);
 
@@ -136,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     startBtn.addEventListener('click', () => {
-      // randomizar alternativas em cada pergunta
+      // Embaralhar alternativas
       for (let i = 1; i <= 20; i++) {
         const oEl = document.getElementById(`o${i}`);
         if (!oEl) continue;
@@ -147,20 +148,20 @@ document.addEventListener('DOMContentLoaded', () => {
         shuffled.forEach(l => oEl.appendChild(l));
       }
 
-      // mostrar quiz e iniciar timer flutuante
-      startBtn.style.display = 'none';
+      // Mostrar quiz e iniciar timer
+      startWrapper.style.display = 'none';
       timerEl.style.display = 'block';
       quizSection.style.display = 'block';
       quizSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
       startTimer(timerEl);
     });
 
-    // Envio: checagem, pausa durante alert e correção
+    // Submit do quiz
     const submitBtn = quizForm.querySelector('button[type="submit"]');
     quizForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      // verificar não respondidas
+      // Verificar questões não respondidas
       const unanswered = [];
       for (let i = 1; i <= 20; i++) {
         const oEl = document.getElementById(`o${i}`);
@@ -171,12 +172,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (unanswered.length > 0) {
         pauseTimerForAlert();
-        alert('Você não respondeu as seguintes questões:\n' + unanswered.join(', '));
+        alert(`⚠️ Você não respondeu as seguintes questões:\n${unanswered.join(', ')}`);
         resumeTimerAfterAlert(timerEl);
         return;
       }
 
-      // todas respondidas -> avaliar
+      // Avaliar respostas
       stopTimer();
       const elapsed = getElapsedMs();
       const timeStr = formatTime(elapsed);
@@ -209,10 +210,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isCorrect) {
           score++;
           qEl.classList.add('correct');
-          qEl.style.background = '#eafaf0';
         } else {
           qEl.classList.add('incorrect');
-          qEl.style.background = '#fff1f1';
         }
 
         const inputs = Array.from(oEl.querySelectorAll('input'));
@@ -232,10 +231,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
+      // Banner de resultado
       const banner = document.createElement('div');
       banner.id = 'resultBanner';
       banner.className = 'result-banner';
-      banner.innerHTML = `<strong>Pontuação:</strong> ${score} / 20 &nbsp; — &nbsp; <strong>Tempo:</strong> ${timeStr}`;
+      
+      let performance = '';
+      let emoji = '';
+      if (score >= 18) {
+        performance = 'Excelente! Você é um expert em História!';
+        emoji = '🏆';
+      } else if (score >= 15) {
+        performance = 'Muito bem! Ótimo conhecimento histórico!';
+        emoji = '🥇';
+      } else if (score >= 12) {
+        performance = 'Bom trabalho! Continue estudando!';
+        emoji = '🥈';
+      } else if (score >= 8) {
+        performance = 'Regular. Revise alguns tópicos.';
+        emoji = '🥉';
+      } else {
+        performance = 'Precisa estudar mais sobre a Segunda Guerra.';
+        emoji = '📚';
+      }
+      
+      banner.innerHTML = `
+        ${emoji} <strong>Resultado Final</strong> ${emoji}<br>
+        <strong>Pontuação:</strong> ${score} / 20 (${Math.round((score/20)*100)}%)<br>
+        <strong>Tempo:</strong> ${timeStr}<br>
+        <strong>Avaliação:</strong> ${performance}
+      `;
+      
       if (submitBtn) submitBtn.parentNode.insertBefore(banner, submitBtn.nextSibling);
       if (submitBtn) submitBtn.disabled = true;
       banner.scrollIntoView({ behavior: 'smooth', block: 'center' });

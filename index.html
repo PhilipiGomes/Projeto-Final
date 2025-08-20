@@ -4,235 +4,242 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Segunda Guerra Mundial - Linha do tempo e Quiz</title>
-    <link rel="stylesheet" href="static/css/styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/styles_tl.css">
   </head>
   <body>
     <header class="hd">
-      <h1>Segunda Guerra Mundial (Linha do tempo e Quiz)</h1>
+      <h1>Segunda Guerra Mundial</h1>
     </header>
 
-    <div class="tl">
-      <iframe
-        src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vQXcrGD6WJq72ghCr7Cn1kn3fExEF-wln8eEWX-jWFIUFOyEgHufVlvBQelacsufUAUjFe-sTxfy3rp&font=Default&lang=pt-br&initial_zoom=2&width=90%25&height=650"
-        width="90%"
-        height="650"
-        webkitallowfullscreen
-        mozallowfullscreen
-        allowfullscreen
-        frameborder="0"
-      ></iframe>
+    <div class="container">
+      <section class="timeline-section">
+        <h2><i class="fas fa-clock"></i> Linha do Tempo Histórica</h2>
+        <div class="tl">
+          <iframe
+            src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vQXcrGD6WJq72ghCr7Cn1kn3fExEF-wln8eEWX-jWFIUFOyEgHufVlvBQelacsufUAUjFe-sTxfy3rp&font=Default&lang=pt-br&initial_zoom=2&width=100%25&height=650"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            frameborder="0"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="quiz-container">
+        <h3>Quiz sobre a Segunda Guerra Mundial</h3>
+
+        <div class="qz">
+          <form id="qf" action="#" method="post">
+
+            <div class="qz-q" id="q1">
+              <p>1- Em qual período ocorreu a Segunda Guerra Mundial?</p>
+              <div class="qz-o" id="o1">
+                <label><input type="radio" name="q1" value="a"><span>1939 a 1945</span></label>
+                <label><input type="radio" name="q1" value="b"><span>1914 a 1918</span></label>
+                <label><input type="radio" name="q1" value="c"><span>200a.C. a 1952</span></label>
+                <label><input type="radio" name="q1" value="d"><span>1947 a 1991</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q2">
+              <p>2- Quais eram os principais países do Eixo?</p>
+              <div class="qz-o" id="o2">
+                <label><input type="radio" name="q2" value="a"><span>Israel, Palestina e Rússia</span></label>
+                <label><input type="radio" name="q2" value="b"><span>Itália, Japão e Alemanha</span></label>
+                <label><input type="radio" name="q2" value="c"><span>EUA, Iraque e Ira</span></label>
+                <label><input type="radio" name="q2" value="d"><span>Espanha, Itália, Alemanha e Japão</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q3">
+              <p>3- Quais eram os principais países dos Aliados?</p>
+              <div class="qz-o" id="o3">
+                <label><input type="radio" name="q3" value="a"><span>França, Reino Unido, EUA e URSS</span></label>
+                <label><input type="radio" name="q3" value="b"><span>França, Inglaterra, EUA e URSS</span></label>
+                <label><input type="radio" name="q3" value="c"><span>Grã-Bretanha, Portugal e Espanha</span></label>
+                <label><input type="radio" name="q3" value="d"><span>Roosevelt, Franklin e Trump</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q4">
+              <p>4- Qual evento marcou o início oficial da Segunda Guerra Mundial?</p>
+              <div class="qz-o" id="o4">
+                <label><input type="radio" name="q4" value="a"><span>Invasão alemã da Polônia</span></label>
+                <label><input type="radio" name="q4" value="b"><span>Ataque japonês a Pearl Harbor</span></label>
+                <label><input type="radio" name="q4" value="c"><span>Invasão alemã da França</span></label>
+                <label><input type="radio" name="q4" value="d"><span>Operação Barbarossa</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q5">
+              <p>5- Qual foi a operação militar alemã contra a União Soviética?</p>
+              <div class="qz-o" id="o5">
+                <label><input type="radio" name="q5" value="a"><span>Operação Market Garden</span></label>
+                <label><input type="radio" name="q5" value="b"><span>Operação Barbarossa</span></label>
+                <label><input type="radio" name="q5" value="c"><span>Operação Overlord</span></label>
+                <label><input type="radio" name="q5" value="d"><span>Operação Torch</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q6">
+              <p>6- Em que data ocorreu o ataque japonês a Pearl Harbor?</p>
+              <div class="qz-o" id="o6">
+                <label><input type="radio" name="q6" value="a"><span>7 de dezembro de 1941</span></label>
+                <label><input type="radio" name="q6" value="b"><span>15 de agosto de 1940</span></label>
+                <label><input type="radio" name="q6" value="c"><span>22 de junho de 1941</span></label>
+                <label><input type="radio" name="q6" value="d"><span>1º de setembro de 1939</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q7">
+              <p>7- Qual foi o nome da operação de desembarque na Normandia?</p>
+              <div class="qz-o" id="o7">
+                <label><input type="radio" name="q7" value="a"><span>Operação Husky</span></label>
+                <label><input type="radio" name="q7" value="b"><span>Operação Overlord</span></label>
+                <label><input type="radio" name="q7" value="c"><span>Operação Neptune</span></label>
+                <label><input type="radio" name="q7" value="d"><span>Operação Dragoon</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q8">
+              <p>8- Quem foi o líder da Alemanha nazista durante a Segunda Guerra Mundial?</p>
+              <div class="qz-o" id="o8">
+                <label><input type="radio" name="q8" value="a"><span>Heinrich Himmler</span></label>
+                <label><input type="radio" name="q8" value="b"><span>Rudolf Hess</span></label>
+                <label><input type="radio" name="q8" value="c"><span>Adolf Hitler</span></label>
+                <label><input type="radio" name="q8" value="d"><span>Hermann Göring</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q9">
+              <p>9- Qual batalha é considerada o ponto de virada na Frente Oriental?</p>
+              <div class="qz-o" id="o9">
+                <label><input type="radio" name="q9" value="a"><span>Batalha de Moscou</span></label>
+                <label><input type="radio" name="q9" value="b"><span>Batalha de Stalingrado</span></label>
+                <label><input type="radio" name="q9" value="c"><span>Batalha de Leningrado</span></label>
+                <label><input type="radio" name="q9" value="d"><span>Batalha de Kursk</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q10">
+              <p>10- Como foi chamado o plano de extermínio dos judeus europeus?</p>
+              <div class="qz-o" id="o10">
+                <label><input type="radio" name="q10" value="a"><span>Solução Final</span></label>
+                <label><input type="radio" name="q10" value="b"><span>Plano Madagascar</span></label>
+                <label><input type="radio" name="q10" value="c"><span>Operação Reinhard</span></label>
+                <label><input type="radio" name="q10" value="d"><span>Plano General Ost</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q11">
+              <p>11- Qual cidade japonesa foi a primeira a ser atingida por uma bomba atômica?</p>
+              <div class="qz-o" id="o11">
+                <label><input type="radio" name="q11" value="a"><span>Nagasaki</span></label>
+                <label><input type="radio" name="q11" value="b"><span>Hiroshima</span></label>
+                <label><input type="radio" name="q11" value="c"><span>Tóquio</span></label>
+                <label><input type="radio" name="q11" value="d"><span>Osaka</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q12">
+              <p>12- Qual foi o nome da resistência francesa durante a ocupação alemã?</p>
+              <div class="qz-o" id="o12">
+                <label><input type="radio" name="q12" value="a"><span>Maquis</span></label>
+                <label><input type="radio" name="q12" value="b"><span>Forces Françaises Libres</span></label>
+                <label><input type="radio" name="q12" value="c"><span>Résistance</span></label>
+                <label><input type="radio" name="q12" value="d"><span>Todas estão corretas</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q13">
+              <p>13- Quem foi o comandante supremo das forças aliadas na Europa?</p>
+              <div class="qz-o" id="o13">
+                <label><input type="radio" name="q13" value="a"><span>Douglas MacArthur</span></label>
+                <label><input type="radio" name="q13" value="b"><span>George Patton</span></label>
+                <label><input type="radio" name="q13" value="c"><span>Bernard Montgomery</span></label>
+                <label><input type="radio" name="q13" value="d"><span>Dwight D. Eisenhower</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q14">
+              <p>14- Qual conferência definiu a divisão da Alemanha após a guerra?</p>
+              <div class="qz-o" id="o14">
+                <label><input type="radio" name="q14" value="a"><span>Conferência de Yalta</span></label>
+                <label><input type="radio" name="q14" value="b"><span>Conferência de Potsdam</span></label>
+                <label><input type="radio" name="q14" value="c"><span>Conferência de Teerã</span></label>
+                <label><input type="radio" name="q14" value="d"><span>Conferência de Casablanca</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q15">
+              <p>15- Qual país foi invadido simultaneamente por Alemanha e União Soviética em 1939?</p>
+              <div class="qz-o" id="o15">
+                <label><input type="radio" name="q15" value="a"><span>Tchecoslováquia</span></label>
+                <label><input type="radio" name="q15" value="b"><span>Polônia</span></label>
+                <label><input type="radio" name="q15" value="c"><span>Finlândia</span></label>
+                <label><input type="radio" name="q15" value="d"><span>Noruega</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q16">
+              <p>16- Qual foi a maior batalha aérea da Segunda Guerra Mundial?</p>
+              <div class="qz-o" id="o16">
+                <label><input type="radio" name="q16" value="a"><span>Batalha da Grã-Bretanha</span></label>
+                <label><input type="radio" name="q16" value="b"><span>Blitz de Londres</span></label>
+                <label><input type="radio" name="q16" value="c"><span>Operação Bodenplatte</span></label>
+                <label><input type="radio" name="q16" value="d"><span>Bombardeio de Dresden</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q17">
+              <p>17- Qual foi o último grande contra-ataque alemão na Frente Ocidental?</p>
+              <div class="qz-o" id="o17">
+                <label><input type="radio" name="q17" value="a"><span>Operação Market Garden</span></label>
+                <label><input type="radio" name="q17" value="b"><span>Batalha de Normandia</span></label>
+                <label><input type="radio" name="q17" value="c"><span>Batalha do Bulge</span></label>
+                <label><input type="radio" name="q17" value="d"><span>Operação Nordwind</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q18">
+              <p>18- Qual ilha no Pacífico foi cenário de uma das mais sangrentas batalhas?</p>
+              <div class="qz-o" id="o18">
+                <label><input type="radio" name="q18" value="a"><span>Guadalcanal</span></label>
+                <label><input type="radio" name="q18" value="b"><span>Iwo Jima</span></label>
+                <label><input type="radio" name="q18" value="c"><span>Okinawa</span></label>
+                <label><input type="radio" name="q18" value="d"><span>Midway</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q19">
+              <p>19- Qual foi o codinome do projeto americano para desenvolver a bomba atômica?</p>
+              <div class="qz-o" id="o19">
+                <label><input type="radio" name="q19" value="a"><span>Projeto Manhattan</span></label>
+                <label><input type="radio" name="q19" value="b"><span>Projeto Trinity</span></label>
+                <label><input type="radio" name="q19" value="c"><span>Projeto Fat Man</span></label>
+                <label><input type="radio" name="q19" value="d"><span>Projeto Little Boy</span></label>
+              </div>
+            </div>
+
+            <div class="qz-q" id="q20">
+              <p>20- Em que data a Alemanha assinou a rendição incondicional?</p>
+              <div class="qz-o" id="o20">
+                <label><input type="radio" name="q20" value="a"><span>30 de abril de 1945</span></label>
+                <label><input type="radio" name="q20" value="b"><span>8 de maio de 1945</span></label>
+                <label><input type="radio" name="q20" value="c"><span>15 de agosto de 1945</span></label>
+                <label><input type="radio" name="q20" value="d"><span>2 de setembro de 1945</span></label>
+              </div>
+            </div>
+
+            <button type="submit">🎖️ Finalizar Quiz</button>
+          </form>
+        </div>
+      </section>
     </div>
 
-    <h3>Quiz sobre a Segunda Guerra Mundial</h3>
-
-    <section class="qz">
-      <form id="qf" action="#" method="post">
-
-        <div class="qz-q" id="q1">
-          <p>1- Em qual período ocorreu a Segunda Guerra Mundial?</p>
-          <div class="qz-o" id="o1">
-            <label><input type="radio" name="q1" value="a"><span>1939 a 1945</span></label>
-            <label><input type="radio" name="q1" value="b"><span>1914 a 1918</span></label>
-            <label><input type="radio" name="q1" value="c"><span>200a.C. a 1952</span></label>
-            <label><input type="radio" name="q1" value="d"><span>1947 a 1991</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q2">
-          <p>2- Quais eram os principais países do Eixo?</p>
-          <div class="qz-o" id="o2">
-            <label><input type="radio" name="q2" value="a"><span>Israel, Palestina e Rússia</span></label>
-            <label><input type="radio" name="q2" value="b"><span>Itália, Japão e Alemanha</span></label>
-            <label><input type="radio" name="q2" value="c"><span>EUA, Iraque e Ira</span></label>
-            <label><input type="radio" name="q2" value="d"><span>Espanha, Itália, Alemanha e Japão</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q3">
-          <p>3- Quais eram os principais países dos Aliados?</p>
-          <div class="qz-o" id="o3">
-            <label><input type="radio" name="q3" value="a"><span>França, Reino Unido, EUA e URSS</span></label>
-            <label><input type="radio" name="q3" value="b"><span>França, Inglaterra, EUA e URSS</span></label>
-            <label><input type="radio" name="q3" value="c"><span>Grã-Bretanha, Portugal e Espanha</span></label>
-            <label><input type="radio" name="q3" value="d"><span>Roosevelt, Franklin e Trump</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q4">
-          <p>4- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o4">
-            <label><input type="radio" name="q4" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q4" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q4" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q4" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q5">
-          <p>5- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o5">
-            <label><input type="radio" name="q5" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q5" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q5" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q5" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q6">
-          <p>6- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o6">
-            <label><input type="radio" name="q6" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q6" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q6" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q6" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q7">
-          <p>7- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o7">
-            <label><input type="radio" name="q7" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q7" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q7" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q7" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q8">
-          <p>8- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o8">
-            <label><input type="radio" name="q8" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q8" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q8" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q8" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q9">
-          <p>9- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o9">
-            <label><input type="radio" name="q9" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q9" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q9" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q9" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q10">
-          <p>10- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o10">
-            <label><input type="radio" name="q10" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q10" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q10" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q10" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q11">
-          <p>11- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o11">
-            <label><input type="radio" name="q11" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q11" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q11" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q11" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q12">
-          <p>12- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o12">
-            <label><input type="radio" name="q12" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q12" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q12" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q12" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q13">
-          <p>13- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o13">
-            <label><input type="radio" name="q13" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q13" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q13" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q13" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q14">
-          <p>14- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o14">
-            <label><input type="radio" name="q14" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q14" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q14" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q14" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q15">
-          <p>15- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o15">
-            <label><input type="radio" name="q15" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q15" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q15" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q15" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q16">
-          <p>16- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o16">
-            <label><input type="radio" name="q16" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q16" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q16" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q16" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q17">
-          <p>17- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o17">
-            <label><input type="radio" name="q17" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q17" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q17" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q17" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q18">
-          <p>18- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o18">
-            <label><input type="radio" name="q18" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q18" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q18" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q18" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q19">
-          <p>19- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o19">
-            <label><input type="radio" name="q19" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q19" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q19" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q19" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <div class="qz-q" id="q20">
-          <p>20- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          <div class="qz-o" id="o20">
-            <label><input type="radio" name="q20" value="a"><span>Lorem ipsum A</span></label>
-            <label><input type="radio" name="q20" value="b"><span>Lorem ipsum B</span></label>
-            <label><input type="radio" name="q20" value="c"><span>Lorem ipsum C</span></label>
-            <label><input type="radio" name="q20" value="d"><span>Lorem ipsum D</span></label>
-          </div>
-        </div>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-
-    <button class="btn-top" aria-label="Voltar ao topo">ʌ</button>
+    <button class="btn-top" aria-label="Voltar ao topo">↑</button>
 
     <script src="/static/js/script.js"></script>
   </body>
