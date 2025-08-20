@@ -120,8 +120,11 @@ https://fonts.google.com/noto/specimen/Noto+Sans
 }
 .tl-timeline .tl-timenav-slider {
   font-family: "Noto Sans", sans-serif;
-  font-weight: 100;
-  background-color: aqua;
+  font-weight: 300;
+}
+
+.tl-timenav{
+    background-color: aqua;
 }
 .tl-timeline .tl-timenav-slider h2.tl-headline {
   font-family: "Noto Sans", sans-serif;
