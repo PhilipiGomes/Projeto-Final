@@ -1,3 +1,115 @@
-.timeline{
-    padding-left: 15%;
+/* básico */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 16px;
+  line-height: 1.4;
+}
+.hd h1 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+.tl {
+  margin-bottom: 20px;
+  margin-left: 15%;
+}
+
+/* quiz layout */
+.qz {
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+.qz-q {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.qz-q p {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+.qz-o {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.qz-o label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+}
+.qz-o input[type="radio"] {
+  margin: 0;
+  width: 18px;
+  height: 18px;
+}
+.qz-o span {
+  display: inline-block;
+}
+
+/* botão voltar ao topo */
+.btn-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #ddd;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* start button & timer */
+.start-btn {
+  padding: 8px 12px;
+  background: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#quiz-timer {
+  font-family: monospace;
+  margin-left: 10px;
+}
+
+/* resultados */
+.result-banner {
+  margin-top: 12px;
+  padding: 12px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  font-weight: 600;
+}
+
+/* estados das questões */
+.correct {
+  background-color: #eafaf0 !important;
+}
+.incorrect {
+  background-color: #fff1f1 !important;
+}
+
+/* ícones (opcional): manter legibilidade) */
+label span {
+  white-space: nowrap;
+}
+
+/* responsivo */
+@media (max-width: 600px) {
+  .qz {
+    padding: 0 12px;
+  }
+  .btn-top {
+    right: 12px;
+    bottom: 12px;
+  }
 }
