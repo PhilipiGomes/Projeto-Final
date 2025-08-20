@@ -4,6 +4,11 @@ body {
   margin: 16px;
   line-height: 1.4;
 }
+
+.h3{
+    text-align: center;
+}
+
 .hd h1 {
   font-size: 1.4rem;
   margin-bottom: 8px;
