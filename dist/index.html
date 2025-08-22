@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Segunda Guerra Mundial - Linha do tempo e Quiz</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/styles.css">
-    <link rel="stylesheet" href="/static/css/styles_tl.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link title="timeline-styles" rel="stylesheet" 
+              href="css/styles_tl.css">
   <body>
     <header class="hd">
       <h1>Segunda Guerra Mundial</h1>
@@ -15,15 +16,7 @@
     <div class="container">
       <section class="timeline-section">
         <h2><i class="fas fa-clock"></i> Linha do Tempo Histórica</h2>
-        <div class="tl">
-          <iframe
-            src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vQXcrGD6WJq72ghCr7Cn1kn3fExEF-wln8eEWX-jWFIUFOyEgHufVlvBQelacsufUAUjFe-sTxfy3rp&font=Default&lang=pt-br&initial_zoom=2&width=100%25&height=650"
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowfullscreen
-            frameborder="0"
-          ></iframe>
-        </div>
+        <div id='timeline-embed' style="width: 100%; height: 650px"></div>
       </section>
 
       <section class="quiz-container">
@@ -240,6 +233,7 @@
 
     <button class="btn-top" aria-label="Voltar ao topo">↑</button>
 
-    <script src="/static/js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/timeline.js"></script>
   </body>
 </html>
