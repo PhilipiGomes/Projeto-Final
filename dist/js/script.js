@@ -1,24 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Respostas corretas do quiz
   const answers = {
-    q1: '1939 a 1945',
-    q2: 'Itália, Japão e Alemanha',
-    q3: 'França, Reino Unido, EUA e URSS',
-    q4: 'Invasão alemã da Polônia',
-    q5: 'Operação Barbarossa',
-    q6: '7 de dezembro de 1941',
-    q7: 'Operação Overlord',
-    q8: 'Adolf Hitler',
-    q9: 'Batalha de Stalingrado',
-    q10: 'Solução Final',
+    q1:  '1939 a 1945',
+    q2:  'Itália, Japão e Alemanha',
+    q3:  'França, Reino Unido, EUA e URSS',
+    q4:  'Invasão alemã da Polônia',
+    q5:  'Operação Barbarossa',
+    q6:  '7 de dezembro de 1941',
+    q7:  'Operação Overlord',
+    q8:  'Adolf Hitler',
+    q9:  'Batalha de Stalingrado',
+    q10: 'Kristallnacht',
     q11: 'Hiroshima',
-    q12: 'Todas as anteriores',
-    q13: 'Dwight D. Eisenhower',
+    q12: 'Résistance',
+    q13: 'Verdadeiro',
     q14: 'Conferência de Potsdam',
     q15: 'Polônia',
-    q16: 'Batalha da Grã-Bretanha',
+    q16: 'Verdadeiro',
     q17: 'Batalha do Bulge',
-    q18: 'Iwo Jima',
+    q18: 'Falso',
     q19: 'Projeto Manhattan',
     q20: '8 de maio de 1945'
   };
@@ -139,6 +139,9 @@ document.addEventListener('DOMContentLoaded', () => {
     startBtn.addEventListener('click', () => {
       // Embaralhar alternativas
       for (let i = 1; i <= 20; i++) {
+        if (i === 13 || i === 16 || i === 18){
+          continue;
+        }
         const oEl = document.getElementById(`o${i}`);
         if (!oEl) continue;
         const labels = Array.from(oEl.querySelectorAll('label'));
