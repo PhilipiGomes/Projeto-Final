@@ -123,7 +123,7 @@
 			}
 			*/
   color: #666666;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .tl-timeline p a:hover,
 .tl-timeline p a:focus {
@@ -131,14 +131,14 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .tl-timeline p a {
-    text-decoration: underline;
+    text-decoration: none;
     background-image: none;
     text-shadow: none;
   }
   .tl-timeline p a:hover,
   .tl-timeline p a:focus {
     color: #c34528;
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 .tl-timeline b,
@@ -154,7 +154,7 @@
   color: #c34528;
 }
 .tl-timeline a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: #6e2717;
 }
 .tl-timeline .tl-caption,
@@ -804,10 +804,11 @@
 ================================================== */
 .tl-timenav {
   width: 100%;
-  background-color: #23283b;
+  background-color: transparent;
   position: relative;
   overflow: hidden;
-  border-top: 1px solid #23283b;
+  border-top: 2px solid #000000;
+  box-shadow: 0 -24px 48px rgba(0, 0, 0, 0.55);
   direction: ltr;
 }
 .tl-timenav .tl-timenav-line {
@@ -1838,7 +1839,7 @@
 }
 .tl-slide.tl-full-image-background a:hover,
 .tl-slide.tl-full-color-background a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: #c34528;
 }
 .tl-slide.tl-full-image-background .tl-caption,
@@ -2402,7 +2403,7 @@
 }
 .tl-slide.tl-full-image-background a:hover,
 .tl-slide.tl-full-color-background a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: #c34528;
 }
 /* Credit
@@ -2557,7 +2558,7 @@
 .tl-full-color-background .tl-text a:hover,
 .tl-full-image-background .tl-text p a:hover,
 .tl-full-color-background .tl-text p a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: #c34528;
 }
 /* Skinny
@@ -2781,7 +2782,7 @@
 }
 .tl-slide.tl-full-image-background .tl-media .tl-media-wikipedia a:hover,
 .tl-slide.tl-full-color-background .tl-media .tl-media-wikipedia a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: #c34528;
 }
 .tl-slide.tl-full-image-background .tl-media .tl-media-wikipedia .tl-wikipedia-title,
@@ -2854,7 +2855,7 @@
 }
 .tl-slide.tl-full-image-background .tl-media .tl-media-website a:hover,
 .tl-slide.tl-full-color-background .tl-media .tl-media-website a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: #c34528;
 }
 .tl-mobile.tl-skinny .tl-media .tl-media-website {

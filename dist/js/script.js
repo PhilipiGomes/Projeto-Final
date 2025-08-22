@@ -100,13 +100,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const startBtn = document.createElement('button');
     startBtn.type = 'button';
     startBtn.id = 'startBtn';
-    startBtn.innerHTML = '🚀 Começar Quiz';
+    startBtn.innerHTML = 'Começar Quiz';
     startBtn.className = 'start-btn';
 
     // Timer flutuante
     const timerEl = document.createElement('div');
     timerEl.id = 'quiz-timer';
-    timerEl.innerHTML = '⏱️ 00:00';
+    timerEl.innerHTML = '00:00';
     Object.assign(timerEl.style, {
       display: 'none',
       position: 'fixed',
