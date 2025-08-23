@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Guerra Mundial - O conflito que mudou o mundo para sempre</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-globe"></i>
+                WWII
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#cronologia"><i class="fas fa-clock"></i> Linha do Tempo</a></li>
+                <li><a href="#curiosidades"><i class="fa-solid fa-lightbulb"></i>Curiosidades</a></li>
+                <li><a href="#quiz"><i class="fas fa-question-circle"></i>Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section da Hero -->
+    <section class="hero">
+        <video id="heroVideo" autoplay muted loop playsinline>
+            <source src="static/videos/test.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos em HTML5.
+        </video>
+        <div class="period-badge">
+            <i class="fas fa-calendar-alt"></i> <b>1939 - 1945</b>
+        </div>
+        
+        <h1>Segunda Guerra Mundial</h1>
+        
+        <p class="hero-subtitle">
+            O tiro que ecoou pelo mundo
+        </p>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <span class="stat-number">70+</span>
+                <span class="stat-label">Milhões de Vidas</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Anos de Guerra</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">70+</span>
+                <span class="stat-label">Países Envolvidos</span>
+            </div>
+        </div>
+
+        <div class="cta-buttons">
+            <a href="#cronologia" class="btn btn-primary">
+                <i class="fas fa-rocket"></i>
+                Ir Para Linha do Tempo
+            </a>
+            <a href="#quiz" class="btn btn-secondary">
+                <i class="fas fa-brain"></i>
+                Fazer o Quiz
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção de Curiosidades -->
+    <section id="curiosidades" class="facts-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Curiosidades</h2>
+                <p class="section-subtitle">
+                    Fatos interessantes sobre a Segunda Guerra Mundial
+                </p>
+            </div>
+            
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <div class="fact-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHitEYjAMf6Ky_AqkQJPPspwcJuDO4Tf3iNg&s" alt="Coca-Cola na Segunda Guerra">
+                    </div>
+                    <div class="fact-content">
+                        <h3>Os Alemães Inventaram a Fanta</h3>
+                        <p>Durante a guerra, a Coca-Cola alemã não conseguia importar o xarope dos EUA devido ao embargo. Para continuar operando, criaram uma nova bebida com ingredientes disponíveis na Alemanha, nascendo assim a Fanta.</p>
+                        <div class="fact-number">01</div>
+                    </div>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-image">
+                        <img src="https://veteransbreakfastclub.org/wp-content/uploads/2021/04/Screen-Shot-2021-04-14-at-2.36.44-PM-1024x687.png" alt="Soldado mais jovem">
+                    </div>
+                    <div class="fact-content">
+                        <h3>O Soldado Mais Jovem</h3>
+                        <p>Calvin Graham alistou-se na Marinha dos EUA aos 12 anos, mentindo sobre sua idade. Ele lutou na Batalha de Guadalcanal e foi ferido em combate, tornando-se o mais jovem veterano de guerra americano.</p>
+                        <div class="fact-number">02</div>
+                    </div>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-image">
+                        <img src="https://warfarehistorynetwork.com/wp-content/uploads/2019/03/pidgeon-lead.jpg" alt="Pombos-correio">
+                    </div>
+                    <div class="fact-content">
+                        <h3>Pombos Heróis de Guerra</h3>
+                        <p>Mais de 250.000 pombos foram usados pelos Aliados para comunicação. Muitos receberam medalhas por bravura, incluindo Cher Ami, que salvou 200 soldados americanos entregando uma mensagem crucial apesar de estar ferido.</p>
+                        <div class="fact-number">03</div>
+                    </div>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-image">
+                        <img src="https://cdn.britannica.com/90/234790-050-A1BEF706/Dummy-tank-decoy-world-war-II.jpg" alt="Tanque inflável">
+                    </div>
+                    <div class="fact-content">
+                        <h3>Exército Fantasma</h3>
+                        <p>Os Aliados criaram um "exército fantasma" com tanques infláveis, aviões falsos e gravações de ruídos militares para enganar os alemães sobre a localização das tropas reais, especialmente antes do Dia D.</p>
+                        <div class="fact-number">04</div>
+                    </div>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThXQW_lt-AuYTVZEgtr9VwfrzhqUhW_qDDTHDC2EHO66l5jg54j6pG16jSo9vE1kMBRMA&usqp=CAU" alt="Mulheres soviéticas">
+                    </div>
+                    <div class="fact-content">
+                        <h3>Snipers Femininas Letais</h3>
+                        <p>A União Soviética utilizou mais de 2.000 mulheres como snipers. Lyudmila Pavlichenko foi a mais mortal, com 309 mortes confirmadas, ganhando o apelido de "Lady Death" dos alemães.</p>
+                        <div class="fact-number">06</div>
+                    </div>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJHr_SKqsRJP5SxZar7JNgZNMFDXBFc36OOA&s" alt="Código Navajo">
+                    </div>
+                    <div class="fact-content">
+                        <h3>O Código Indecifrável</h3>
+                        <p>Os americanos usaram a língua navajo como código secreto no Pacífico. Os "Code Talkers" navajos criaram um código que os japoneses nunca conseguiram decifrar, sendo fundamental para a vitória americana.</p>
+                        <div class="fact-number">07</div>
+                    </div>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-image">
+                        <img src="https://img.atlasobscura.com/GCaZr-Rkz1lZt37TEucyKSKEIVfLyQPBT03m7Xpglng/rs:fill:12000:12000/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8yZTk3NmEzMzU0/ZjNhODNjMTZfY2Fy/cm90bmlnaHRzaWdo/dC5qcGc.jpg" alt="Radar britânico">
+                    </div>
+                    <div class="fact-content">
+                        <h3>A Mentira da Cenoura</h3>
+                        <p>Os britânicos espalharam que cenouras melhoravam a visão noturna para esconder que haviam inventado o radar. Essa propaganda foi tão eficaz que muitos ainda acreditam nisso hoje.</p>
+                        <div class="fact-number">08</div>
+                    </div>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Wojtek_the_bear.jpg/1200px-Wojtek_the_bear.jpg" alt="Urso Wojtek">
+                    </div>
+                    <div class="fact-content">
+                        <h3>O Urso Soldado</h3>
+                        <p>Wojtek era um urso-pardo adotado por soldados poloneses que carregava munições durante a Batalha de Monte Cassino. Ele foi oficialmente alistado como soldado e promovido a cabo.</p>
+                        <div class="fact-number">09</div>
+                    </div>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Major_Martin.jpg" alt="Operação Mincemeat">
+                    </div>
+                    <div class="fact-content">
+                        <h3>O Homem que Nunca Existiu</h3>
+                        <p>A Operação Mincemeat usou um cadáver com documentos falsos para enganar os alemães sobre a invasão da Sicília. "Major Martin" foi encontrado pelos alemães, que acreditaram nas informações falsas.</p>
+                        <div class="fact-number">10</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section da Timeline -->
+    <section id="cronologia" class="timeline-section">
+        <div class="section-header">
+            <h2 class="section-title">Jornada Através do Tempo</h2>
+            <p class="section-subtitle">
+                Explore os momentos decisivos da Segunda Guerra Mundial através de nossa linha do tempo interativa
+            </p>
+        </div>
+        
+        <div class="container">
+            <div class="timeline-containe">
+              <iframe
+              src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vQXcrGD6WJq72ghCr7Cn1kn3fExEF-wln8eEWX-jWFIUFOyEgHufVlvBQelacsufUAUjFe-sTxfy3rp&font=Default&lang=pt-br&initial_zoom=2&width=100%25&height=650"
+              webkitallowfullscreen
+              height="650"
+              width="100%25"
+              mozallowfullscreen
+              allowfullscreen
+              frameborder="0"
+            ></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section do Quiz -->
+    <section id="quiz" class="quiz-section">
+        <div class="quiz-container">
+            <div class="quiz-intro">
+                <h2>Quiz sobre a Segunda Guerra Mundial</h2>
+                <p>Teste seus conhecimentos sobre este período histórico fundamental com nosso quiz completo.</p>
+                <button id="startBtn" class="quiz-start-btn">
+                    <i class="fas fa-play"></i>
+                    Começar Quiz
+                </button>
+            </div>
+
+            <div class="quiz-content" id="quizContent">
+                <form id="qf" action="#" method="post">
+        
+                    <div class="qz-q" id="q1">
+                        <p>1- Em qual período ocorreu a Segunda Guerra Mundial?</p>
+                        <div class="qz-o" id="o1">
+                            <label><input type="radio" name="q1" value="a"><span>1939 a 1945</span></label>
+                            <label><input type="radio" name="q1" value="b"><span>1914 a 1918</span></label>
+                            <label><input type="radio" name="q1" value="c"><span>200a.C. a 1952</span></label>
+                            <label><input type="radio" name="q1" value="d"><span>1947 a 1991</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q2">
+                        <p>2- Quais eram os principais países do Eixo?</p>
+                        <div class="qz-o" id="o2">
+                            <label><input type="radio" name="q2" value="a"><span>Israel, Palestina e Rússia</span></label>
+                            <label><input type="radio" name="q2" value="b"><span>Itália, Japão e Alemanha</span></label>
+                            <label><input type="radio" name="q2" value="c"><span>EUA, Iraque e Ira</span></label>
+                            <label><input type="radio" name="q2" value="d"><span>Espanha, Itália, Alemanha e Japão</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q3">
+                        <p>3- Quais eram os principais países dos Aliados?</p>
+                        <div class="qz-o" id="o3">
+                            <label><input type="radio" name="q3" value="a"><span>França, Reino Unido, EUA e URSS</span></label>
+                            <label><input type="radio" name="q3" value="b"><span>França, Inglaterra, EUA e URSS</span></label>
+                            <label><input type="radio" name="q3" value="c"><span>Grã-Bretanha, Portugal e Espanha</span></label>
+                            <label><input type="radio" name="q3" value="d"><span>Roosevelt, Franklin e Trump</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q4">
+                        <p>4- Qual evento marcou o início oficial da Segunda Guerra Mundial?</p>
+                        <div class="qz-o" id="o4">
+                            <label><input type="radio" name="q4" value="a"><span>Invasão alemã da Polônia</span></label>
+                            <label><input type="radio" name="q4" value="b"><span>Ataque japonês a Pearl Harbor</span></label>
+                            <label><input type="radio" name="q4" value="c"><span>Invasão alemã da França</span></label>
+                            <label><input type="radio" name="q4" value="d"><span>Operação Barbarossa</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q5">
+                        <p>5- Qual foi a operação militar alemã contra a União Soviética?</p>
+                        <div class="qz-o" id="o5">
+                            <label><input type="radio" name="q5" value="a"><span>Operação Market Garden</span></label>
+                            <label><input type="radio" name="q5" value="b"><span>Operação Barbarossa</span></label>
+                            <label><input type="radio" name="q5" value="c"><span>Operação Overlord</span></label>
+                            <label><input type="radio" name="q5" value="d"><span>Operação Torch</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q6">
+                        <p>6- Em que data ocorreu o ataque japonês a Pearl Harbor?</p>
+                        <div class="qz-o" id="o6">
+                            <label><input type="radio" name="q6" value="a"><span>7 de dezembro de 1941</span></label>
+                            <label><input type="radio" name="q6" value="b"><span>15 de agosto de 1940</span></label>
+                            <label><input type="radio" name="q6" value="c"><span>22 de junho de 1941</span></label>
+                            <label><input type="radio" name="q6" value="d"><span>1º de setembro de 1939</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q7">
+                        <p>7- Qual foi o nome da operação de desembarque na Normandia?</p>
+                        <div class="qz-o" id="o7">
+                            <label><input type="radio" name="q7" value="a"><span>Operação Husky</span></label>
+                            <label><input type="radio" name="q7" value="b"><span>Operação Overlord</span></label>
+                            <label><input type="radio" name="q7" value="c"><span>Operação Neptune</span></label>
+                            <label><input type="radio" name="q7" value="d"><span>Operação Dragoon</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q8">
+                        <p>8- Quem foi o líder da Alemanha nazista durante a Segunda Guerra Mundial?</p>
+                        <div class="qz-o" id="o8">
+                            <label><input type="radio" name="q8" value="a"><span>Heinrich Himmler</span></label>
+                            <label><input type="radio" name="q8" value="b"><span>Rudolf Hess</span></label>
+                            <label><input type="radio" name="q8" value="c"><span>Adolf Hitler</span></label>
+                            <label><input type="radio" name="q8" value="d"><span>Hermann Göring</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q9">
+                        <p>9- Qual batalha é considerada o ponto de virada na Frente Oriental? dica: (Rússia)</p>
+                        <div class="qz-o" id="o9">
+                            <label><input type="radio" name="q9" value="a"><span>Batalha de Moscou</span></label>
+                            <label><input type="radio" name="q9" value="b"><span>Batalha de Stalingrado</span></label>
+                            <label><input type="radio" name="q9" value="c"><span>Batalha de Leningrado</span></label>
+                            <label><input type="radio" name="q9" value="d"><span>Batalha de São Petersburgo</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q10">
+                        <p>10- Como foi chamado o pogrom Nazista contra os Judeus na Europa, principalmente Alemanha e Áustria?</p>
+                        <div class="qz-o" id="o10">
+                            <label><input type="radio" name="q10" value="a"><span>Kristallnacht</span></label>
+                            <label><input type="radio" name="q10" value="b"><span>Nacht der langen Messer</span></label>
+                            <label><input type="radio" name="q10" value="c"><span>Geschirrklirren</span></label>
+                            <label><input type="radio" name="q10" value="d"><span>kleckern</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q11">
+                        <p>11- Qual cidade japonesa foi a primeira a ser atingida por uma bomba atômica?</p>
+                        <div class="qz-o" id="o11">
+                            <label><input type="radio" name="q11" value="a"><span>Nagasaki</span></label>
+                            <label><input type="radio" name="q11" value="b"><span>Hiroshima</span></label>
+                            <label><input type="radio" name="q11" value="c"><span>Tóquio</span></label>
+                            <label><input type="radio" name="q11" value="d"><span>Osaka</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q12">
+                        <p>12- Quais foram os Primeiros-Ministros do Reino Unido no período da Segunda Guerra Mundial?</p>
+                        <div class="qz-o" id="o12">
+                            <label><input type="radio" name="q12" value="a"><span>Neville Chamberlain e Winston Churchill</span></label>
+                            <label><input type="radio" name="q12" value="b"><span>Franz Ferdinand e Leon Trótski</span></label>
+                            <label><input type="radio" name="q12" value="c"><span>Herbert Hoover e James A. Garfield</span></label>
+                            <label><input type="radio" name="q12" value="d"><span>Gordon Ramsay e Winston Churchill</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q13">
+                        <p>13- O acordo de Munique foi o acordo em que a Grã-Bretanha e a França cederam a Tchecoslováquia.</p>
+                        <div class="qz-o" id="o13">
+                            <label><input type="radio" name="q13" value="a"><span>Verdadeiro</span></label>
+                            <label><input type="radio" name="q13" value="b"><span>Falso</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q14">
+                        <p>14- Qual conferência definiu a divisão da Alemanha após a guerra?</p>
+                        <div class="qz-o" id="o14">
+                            <label><input type="radio" name="q14" value="a"><span>Conferência de Yalta</span></label>
+                            <label><input type="radio" name="q14" value="b"><span>Conferência de Potsdam</span></label>
+                            <label><input type="radio" name="q14" value="c"><span>Conferência de Teerã</span></label>
+                            <label><input type="radio" name="q14" value="d"><span>Conferência de Casablanca</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q15">
+                        <p>15- Qual país foi invadido simultaneamente por Alemanha e União Soviética em 1939?</p>
+                        <div class="qz-o" id="o15">
+                            <label><input type="radio" name="q15" value="a"><span>Tchecoslováquia</span></label>
+                            <label><input type="radio" name="q15" value="b"><span>Polônia</span></label>
+                            <label><input type="radio" name="q15" value="c"><span>Finlândia</span></label>
+                            <label><input type="radio" name="q15" value="d"><span>Noruega</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q16">
+                        <p>16- O Roaring Twenties foi um período de alta culturalidade nos EUA e Europa:</p>
+                        <div class="qz-o" id="o16">
+                            <label><input type="radio" name="q16" value="a"><span>Verdadeiro</span></label>
+                            <label><input type="radio" name="q16" value="b"><span>Falso</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q17">
+                        <p>17- Qual foi a última grande ofensiva alemã na Frente Ocidental?</p>
+                        <div class="qz-o" id="o17">
+                            <label><input type="radio" name="q17" value="a"><span>Batalha do Bulge</span></label>
+                            <label><input type="radio" name="q17" value="b"><span>Operação Market Garden</span></label>
+                            <label><input type="radio" name="q17" value="c"><span>Batalha da Normandia</span></label>
+                            <label><input type="radio" name="q17" value="d"><span>Operação Cobra</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q18">
+                        <p>18- O Japão invadiu a Manchúria, na China, e a renomeou como um Estado-Fantoche chamado Manchukuo</p>
+                        <div class="qz-o" id="o18">
+                            <label><input type="radio" name="q18" value="a"><span>Verdadeiro</span></label>
+                            <label><input type="radio" name="q18" value="b"><span>Falso</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q19">
+                        <p>19- Qual foi o codinome do projeto americano para desenvolver a bomba atômica?</p>
+                        <div class="qz-o" id="o19">
+                            <label><input type="radio" name="q19" value="a"><span>Projeto Manhattan</span></label>
+                            <label><input type="radio" name="q19" value="b"><span>Projeto Trinity</span></label>
+                            <label><input type="radio" name="q19" value="c"><span>Projeto Fat Man</span></label>
+                            <label><input type="radio" name="q19" value="d"><span>Projeto Little Boy</span></label>
+                        </div>
+                    </div>
+        
+                    <div class="qz-q" id="q20">
+                        <p>20- Em que data a Alemanha assinou a rendição incondicional?</p>
+                        <div class="qz-o" id="o20">
+                            <label><input type="radio" name="q20" value="a"><span>30 de abril de 1945</span></label>
+                            <label><input type="radio" name="q20" value="b"><span>8 de maio de 1945</span></label>
+                            <label><input type="radio" name="q20" value="c"><span>15 de agosto de 1945</span></label>
+                            <label><input type="radio" name="q20" value="d"><span>2 de setembro de 1945</span></label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary quiz-submit-btn">
+                        <i class="fas fa-check"></i>
+                        Finalizar Quiz
+                    </button>
+                </form>
+
+                <div id="results" class="results hidden">
+                    <h3>Resultado Final</h3>
+                    <div class="score" id="score">0/20</div>
+                    <p id="feedback">Parabéns! Você demonstrou um bom conhecimento sobre a Segunda Guerra Mundial.</p>
+                    <p>Tempo: <span id="finalTime">00:00</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Segunda Guerra Mundial</h3>
+                    <p>Um site interativo sobre o maior e mais letal conflito de todos.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/PhilipiGomes/Projeto-Final" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://docs.google.com/document/d/1PSEhphrFT_aWMhqP1WL4xqApujbMYgpe_mH_gi5WWY0/edit?usp=sharing" class="social-link"><i class="fa-solid fa-file"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#cronologia">Linha do Tempo</a></li>
+                        <li><a href="#quiz">Quiz Interativo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Aprenda Mais</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.educamaisbrasil.com.br/educacao/dicas/5-documentarios-sobre-a-segunda-guerra-mundial">Documentários</a></li>
+                        <li><a href="https://www.institutoclaro.org.br/educacao/nossas-novidades/noticias/8-livros-para-entender-a-segunda-guerra-mundial/">Livros Recomendados</a></li>
+                        <li><a href="https://wwiifoundation.org/virtual-visit/">Museus Virtuais</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; Segunda Guerra Mundial - 3º D.S - Desenvolvido por Philipi e Otávio.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-rocket"></i>
+        <span class="btn-text">Topo</span>
+    </button>
+
+    <div class="timer" id="timer">00:00</div>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
